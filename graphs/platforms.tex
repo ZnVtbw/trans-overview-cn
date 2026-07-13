@@ -1,0 +1,21 @@
+\begin{axis}[
+    ybar,
+    bar width=25pt,
+    width=14cm,
+    height=8cm,
+    ymin=0,
+    ymax=25,
+    ylabel={Mentions},
+    xlabel={Platforms},
+    symbolic x coords={QQ, X (Twitter), Bilibili, Telegram, Discord, Xiaohongshu, Other},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east},
+    nodes near coords,
+    nodes near coords align={vertical},
+    enlarge x limits=0.05,
+    area style,
+]
+\addplot[] coordinates {
+    (QQ,21) (X (Twitter),19) (Bilibili,14) (Telegram,12) (Discord,9) (Xiaohongshu,8) (Other,10)
+};
+\end{axis}
